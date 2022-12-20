@@ -1,0 +1,543 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+/* ---- End of Reset ---- */ 
+
+
+body{
+    font-family: Mostra-Nuova, Futura, Century Gothic, Arial, sans-serif;
+    background-color: #070707;
+    color: white;
+    font-size: 2em;
+}   
+
+#display-none{
+    display: none;
+}
+
+.cinema-font{
+    font-family: broadacre-hairline-3, Mostra-Nuova, Futura, Century Gothic, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: 5%;
+    display: block;
+}
+
+#wrapper{
+    margin: 0 auto;
+    max-width: 100vw;
+    background-color: rgb(15, 15, 15);
+
+
+}
+
+
+
+/* ---- Navigation ----- */ 
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: .5em;
+    padding: 1%;
+    margin: 2%;
+    letter-spacing: 2px;
+}
+
+footer{
+    background-color: rgb(61, 61, 61);
+    margin-top: 10%;
+}
+
+footer a, footer a:visited{
+    color: white;
+}
+
+
+/* ---- Links ---- */ 
+
+li{
+    letter-spacing: 1.5px;
+}
+
+a, a:visited{
+    color: rgb(92, 92, 92);
+}
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color: chartreuse;
+}
+
+a:focus{
+    color: chartreuse;
+}
+
+/* ---- Headings ---- */ 
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .5em;
+    color: #FCD405;
+    padding: 2%;
+    margin: 5% 2%;
+}
+
+#showtimes h1{
+    color: rgb(211, 211, 211);
+}
+
+#storyline h1{
+    font-size: 6vw;
+    margin-top: 10%;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: center;
+    padding: 7% 0 0% 7%;
+    margin: 5% 0 5 0%;
+}
+
+h3{
+    font-family: broadacre-hairline-3, Mostra-Nuova, Futura, Century Gothic, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin: 25% 0;
+    text-align: center;
+}
+
+/*---- Main content ----*/
+p{
+    text-align: center;
+    padding: 5%;
+}
+
+
+
+dl, dt, dd{
+    text-align: center;
+}
+
+#cinema-details p > span{ /* Targets 'Now showing" */ 
+    font-family: broadacre-hairline-3, Mostra-Nuova, Futura, Century Gothic, Arial, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.4;
+    display: block;
+    font-size: 1.4em;
+    margin: 20% 0;
+
+}
+
+.uppercase{
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+dt{
+    margin-top: 30%;
+    border: 2.5px solid white;
+    min-width: fit-content;
+    padding: 2.5%;
+}
+
+
+#storyline p{
+    background-color: #5b50ab7c;
+    font-size: 0.7em;
+
+}
+
+#story-wrapper p{
+    text-align: initial;
+    padding: 10%;
+    line-height: 120%;
+
+}
+
+
+.address p{
+    padding: 0%;
+    margin: 0;
+}
+
+/* #cinema-ticket{
+    
+    
+
+} */
+
+
+
+
+/* ------ Images ------ */ 
+
+
+#mirth, #story-wrapper img{
+    max-width: 90vw;
+    
+
+}
+
+#mirth{
+  margin: 5%;
+
+    
+}
+
+#story-wrapper img{
+    margin-left: 5%;
+}
+
+
+dt + img{
+    border-radius: 100px;
+    height: 200px;
+    width: auto;
+    margin: 10%;
+    padding: 2%;
+
+}
+
+#main-logo{
+    height: 150px;
+    width: auto;
+    margin: 2%;
+  } 
+
+#loki-mask{
+    height: 300px;
+    width: auto;
+    padding: 7.5%;
+}
+
+
+table{
+    background-color: rgb(37, 37, 37);
+    font-size: .5em;
+    text-transform: uppercase;
+    min-width: 80vw;
+    text-align: right;
+    margin: 0 auto;
+
+}
+
+
+
+tr{
+    background-color: #2e2e2e;
+    
+}
+
+th, td, tr{
+    padding: 2% 5%;
+}
+
+th{
+    font-size: 1.1em;
+    padding: 5%;
+}
+
+td{
+    background-color: rgb(88, 88, 88);
+    padding: 3%;
+}
+
+iframe{
+    max-width: 100vw;
+    max-height: 50vh;
+    margin: 0 auto;
+    padding: 5%;
+    
+}
+
+
+/* ----- Media Queries ----- */ 
+
+/* Larger phones */ 
+@media screen and (min-width: 350px) {
+    #main-logo{
+        margin-left: 10%;
+    }
+
+    #loki-mask{
+        margin-left: 10%;
+    }
+
+} 
+
+/* Tablets and medium sized screens */
+@media screen and (min-width: 720px) {
+    #main-logo {
+        height: 200px;
+        width: auto;
+        margin-left: 25%;
+        
+    }
+
+
+    #loki-mask{
+        margin-left: 20%;
+        height: 500px;
+        width: auto;
+    }
+    #wrapper{
+
+        border: 10px solid white; 
+        border-image: url("images/final_images/blackandwhitejazzpattern.jpg") repeat;
+        border-image-slice: 7%;
+        padding: 5%;  
+        max-width: 95vw;
+        clear: both;
+        
+    }
+
+    th{
+        font-size: 1.5em;
+        
+    }
+    
+    td{
+        font-size: 1.4em;
+        
+    }
+
+
+
+    #story-wrapper{
+        background-color: #5b50ab63;
+        border: 10px solid white; 
+        border-image: url("images/final_images/polka_dot.jpg") repeat;
+        border-image-slice: 4%;
+    }
+
+    
+  
+    #storyline{
+        margin: 0 auto;
+        max-width: 95vw;
+
+       
+    }
+
+    #showtimes h1{
+        font-size: 5vw;
+    }
+
+    #mirth{
+        position: relative;
+        left: 175px;
+      
+          
+      }
+
+    
+
+
+    
+
+  } 
+
+/* Larger screens and desktop */
+@media screen and (min-width: 1024px) {
+    nav{
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
+
+    #main-logo {
+        height: 300px;
+        width: auto;
+        margin: 2% 5% 5% 10%;
+    }
+
+    h1{
+        font-size: .6em;
+        padding: 2.5%;
+        margin: 2%;
+        letter-spacing: 3px;
+    }
+
+    #storyline h1{
+        font-size: 5vw;
+    }
+
+    h2{
+        font-size: 1.5em;
+        padding: 0;
+        margin: 0;
+        letter-spacing: 3px;
+    }
+
+    h2.cinema-font{
+        font-size: 3vw;
+    }
+
+    h3{
+        font-size: 2.5em;
+        margin: 10% 0 0 0;
+    
+    }
+
+    #loki-mask{
+        height: 500px;
+        float: right;
+        margin: -37% 10%;
+        padding: 2%;
+
+    }
+
+
+    #wrapper{
+        margin-top: 20%;
+        border: 40px solid black; 
+        border-image: url("images/final_images/blackandwhitejazzpattern.jpg") repeat;
+        border-image-slice: 12%;
+        padding: 0;
+
+    }
+
+    #writers{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 10%;
+    }
+
+    #writers p{
+        font-size: 1.8em;
+        padding: 2%;
+    }
+
+    dt + img{
+        height: 300px;
+        width: auto;
+    }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10%;
+        gap: 10%;        
+        
+    }
+
+    .flex-item{
+        min-width: 400px;
+        margin: 2%;
+    }
+
+    th{
+        font-size: 1.7em;
+        
+    }
+    
+    td{
+        font-size: 1.5em;
+        padding: 3.5%;
+        
+    }
+
+    table{
+        min-width: 65vw;
+    
+    }
+
+
+
+    iframe{
+        min-width: 100%;
+    }
+
+    #mirth{
+        position: relative;
+        height: 100%;
+        width: auto;
+        left: 450px;
+    }
+
+    #story-wrapper img:not(:first-of-type){
+        position: relative;
+        left: 600px;
+    }
+    
+    #cinema-details p{
+        font-size: 4vw;
+        margin-top: -10%;
+
+
+    }
+
+    #storyline h1{
+        margin-top: 3%;
+    }
+
+    #storyline p{
+        font-size: 2.5vw;
+    }
+
+
+
+
+    footer{
+        margin: 0;
+    }
+    
+
+
+
+  } 
